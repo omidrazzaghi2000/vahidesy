@@ -41,14 +41,15 @@ function App() {
       <Router>
         <Preloader load={load} />
         <div className="App" id={load ? "no-scroll" : "scroll"}>
-          <ScrollToTopOnRouteChange />
-          <Routes>
+          {/* <ScrollToTopOnRouteChange /> */}
+          <Layout />
+          {/* <Routes>
             <Route path="/" element={<Layout />} />
-            {/* <Route path="/about" element={<About />} />
+            <Route path="/about" element={<About />} />
             <Route path="/projectlist" element={<ArchiveProjects />} />
-            <Route path="/contact" element={<Contact />} /> */}
+            <Route path="/contact" element={<Contact />} />
             <Route path="/*" element={<NotFound />} />
-          </Routes>
+          </Routes> */}
         </div>
       </Router>
     </div>

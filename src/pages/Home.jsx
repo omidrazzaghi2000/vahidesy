@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect } from "react";
 import TypewriterText from "../components/TypewriterText";
 import { UserData } from "../data/UserData";
 import {
@@ -8,6 +9,8 @@ import {
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import imagedeveloper from "../Assets/images/doctor.png";
+import { color } from "framer-motion";
+import logo from "../Assets/images/brain_logo.png";
 
 function Home() {
   const socialMedia = UserData.socialMedia;
@@ -19,14 +22,34 @@ function Home() {
     AiFillInstagram: AiFillInstagram,
   };
 
+
+  useEffect(()=>{
+    VANTA.NET({
+      el: "#home",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: 0xc5a346,
+      backgroundColor: 0x140c2e,
+      points: 20.00,
+      maxDistance: 32.00,
+      spacing: 20.00
+    })
+  },[])
+
   return (
-    <div className="mb-28 h-auto w-full sm:mb-0 md:h-screen">
-      <div className="mx-auto mt-40 flex w-[90%] flex-col items-center sm:flex-row lg:mt-32 lg:w-[80%] lg:justify-between  ">
-        <div className="w-full">
-          <h2 className="text-4xl font-semibold leading-tight text-gray-900 lg:text-5xl" style={{color:'#37365E'}}>
+    <div className="h-auto w-full sm:mb-0 h-screen" id="home">
+      
+      <div className="mx-auto  flex w-[90%] flex-col items-center sm:flex-row lg:w-[80%] lg:justify-between  ">
+        <div className="mt-40 w-full">
+          <h2 className="text-4xl font-semibold leading-tight text-white lg:text-5xl" >
             Hello <span className="wave">👋</span>
           </h2>
-          <h2 className="pt-2 text-4xl font-semibold leading-tight text-gray-900" style={{color:'#37365E'}}>
+          <h2 className="pt-2 text-4xl font-semibold leading-tight text-white" >
             We're {UserData.name}
           </h2>
           <TypewriterText />
@@ -47,15 +70,20 @@ function Home() {
           </div>
         </div>
 
-        <div className="mt-20 lg:mt-12">
-          <img
-            className="max-w[550px] bg-cover bg-center bg-no-repeat lg:h-[700px] lg:w-[3000px]"
+        <div className=" right-panel lg:mt-12 text-center">
+          {/* <img
+            className="max-w[550px] bg-cover bg-center bg-no-repeat lg:w-[2500px]"
             src={imagedeveloper}
             alt=""
-          />
+          /> */}
+          <img style={{display:'block'}}
+          className="h-50 w-50 bg-cover bg-no-repeat m-auto"
+          src={logo}
+          alt="logo"
+        />
         </div>
       </div>
-    </div>
+      </div>
   );
 }
 

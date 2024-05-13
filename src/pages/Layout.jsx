@@ -11,9 +11,9 @@ function Layout() {
   return (
     <>
       <Header />
-      <Element name="Home-section">
-        <Home />
-      </Element>
+      {/* <Element name="Home-section"> */}
+        <Home/>
+      {/* </Element> */}
       {/* <Element name="About-section">
         <About />
       </Element> */}
