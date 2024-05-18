@@ -151,13 +151,13 @@ html {
   }
   .Typewriter__wrapper {
     font-size: 1.6em !important;
-    color: #37365E !important;
+    color: #ffffff !important;
     font-weight: 600 !important;
     letter-spacing: 1px !important;
   }
   .Typewriter__cursor {
     font-size: 1.4em !important;
-    color: #191919 !important;
+    color: #d4d4e4 !important;
   }
 }
 
@@ -173,4 +173,17 @@ html {
   display: flex;
   justify-content: center;
 
+}
+
+@media only screen and (max-width: 600px) {
+  .right-panel{
+    
+    background-color: #82819b;
+    position: initial;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+  
+  }
 }

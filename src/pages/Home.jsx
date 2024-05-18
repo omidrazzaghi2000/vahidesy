@@ -11,7 +11,8 @@ import { FaLinkedinIn } from "react-icons/fa";
 import imagedeveloper from "../Assets/images/doctor.png";
 import { color } from "framer-motion";
 import logo from "../Assets/images/brain_logo.png";
-
+import * as THREE from "../utils/three-vanta.js";
+import NET from "vanta/dist/vanta.net.min.js";
 function Home() {
   const socialMedia = UserData.socialMedia;
 
@@ -24,7 +25,7 @@ function Home() {
 
 
   useEffect(()=>{
-    VANTA.NET({
+    NET({
       el: "#home",
       mouseControls: true,
       touchControls: true,
@@ -35,7 +36,7 @@ function Home() {
       scaleMobile: 1.00,
       color: 0xc5a346,
       backgroundColor: 0x140c2e,
-      points: 20.00,
+      points: 16.00,
       maxDistance: 32.00,
       spacing: 20.00
     })
@@ -45,7 +46,7 @@ function Home() {
     <div className="h-auto w-full sm:mb-0 h-screen" id="home">
       
       <div className="mx-auto  flex w-[90%] flex-col items-center sm:flex-row lg:w-[80%] lg:justify-between  ">
-        <div className="mt-40 w-full">
+        <div className="mt-20 w-full ">
           <h2 className="text-4xl font-semibold leading-tight text-white lg:text-5xl" >
             Hello <span className="wave">👋</span>
           </h2>
