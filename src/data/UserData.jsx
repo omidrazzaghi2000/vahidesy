@@ -7,25 +7,25 @@ export const UserData = {
     
     {
       socialMediaName: "linkedin",
-      url: "https://www.linkedin.com/in/omid-r-70a131b3/",
+      url: "https://ir.linkedin.com/company/mindphilosa",
       icon: "FaLinkedinIn",
     },
     {
-      socialMediaName: "twitter",
-      url: "https://twitter.com/AttendSlayer",
-      icon: "AiOutlineTwitter",
+      socialMediaName: "youtube",
+      url: "https://youtube.com/@mindphilosa?si=dQ9frtIp6ah3psbS",
+      icon: "AiFillYoutube",
     },
     {
       socialMediaName: "instagram",
-      url: "https://www.instagram.com/vahidesy/",
+      url: "http://Instagram.com/mindphilosa",
       icon: "AiFillInstagram",
     },
   ],
   typewriterOptions: {
     strings: [
-      "Beautiful Boys",
-      "Conciseness Guys",
-      "Neuroscience Doctors",
+      "با ما در تماس باشید",
+      "اخبار انجمن را از درگاه‌های زیر پیگیری کنید",
+      "راه‌های ارتباطی",
 
     ],
     autoStart: true,

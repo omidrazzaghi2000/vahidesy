@@ -1,3 +1,20 @@
+# Omid Pay Attention
+For deploying you must add three-vanta.js in utils directory and add below tag into last final index.html
+.It must be done in each deploying and after each build command.
+```html
+<script crossorigin src="/vahidesy/assets/three-vanta.js"></script>
+```
+
+Deploy with below command
+
+```bash
+$npx gh-pages -d dist
+```
+
+
+
+
+
 # Personal Portfolio
 
 ![Rahul-Portfolio](https://user-images.githubusercontent.com/118264222/224553983-d0782a0a-7fb0-479e-a491-c7124b286d03.png)
