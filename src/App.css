@@ -192,6 +192,15 @@ html {
   color: #d9bc29;
 }
 
+.text-and-image-container{
+  height: 100vh;
+}
+
+.header{
+  padding:12px;
+  background-color: #ddd;
+}
+
 @media only screen and (max-width: 600px) {
   .right-panel{
     position: initial;
@@ -206,7 +215,7 @@ html {
   }
  
   .text-and-image-container{
-    height: fit-content;
+    height: 100vh;
   }
 
   .link-buttons {
@@ -215,7 +224,14 @@ html {
 
   .text-container{
     width: 100%;
-    margin-top: 20px;
+    margin-top: 86px;
   }
 
+}
+
+@media only screen and (max-height: 650px) 
+{
+  .text-and-image-container{
+    height: fit-content;
+  }
 }

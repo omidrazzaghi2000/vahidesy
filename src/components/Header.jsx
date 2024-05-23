@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import { Link, Events, scrollSpy } from "react-scroll";
 import { CgMenuRight } from "react-icons/cg";
 import { UserData } from "../data/UserData";
-// import logo from "../Assets/images/brain_logo.png";
-
+import logo from "../Assets/images/brain_logo.png";
+import sutLogo from "../Assets/svg/icons/sut.svg";
 const Header = () => {
   const [isScrolling, setisScrolling] = useState(false);
   const [activeSection, setActiveSection] = useState(null);
@@ -37,15 +37,22 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 z-50 flex w-full items-center justify-between text-base transition-all sm:px-4 lg:px-28 lg:pt-2
+      className={`header fixed top-0 z-50 flex w-full items-center justify-between text-base transition-all sm:px-4 lg:px-28 lg:pt-2
       ${isScrolling ? "sticky" : ""}`}
     >
-      <div className="cursor-pointer">
-        {/* <img
-          className="h-[32px] w-[32px] bg-cover bg-no-repeat"
+      <div className="header-inside-div cursor-pointer flex">
+        
+      <img
+          className="h-[42px] w-[42px] bg-cover bg-no-repeat"
+          src={sutLogo}
+          alt="sutLogo"
+        />
+        <div style={{width:'16px'}}></div>
+        <img
+          className="h-[42px] w-[42px] bg-cover bg-no-repeat"
           src={logo}
           alt="logo"
-        /> */}
+        />
         
       </div>
       

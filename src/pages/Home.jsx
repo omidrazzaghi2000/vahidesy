@@ -38,7 +38,7 @@ function Home() {
         el: homeRef.current,
         mouseControls: true,
         touchControls: true,
-        gyroControls: false,
+        gyroControls: true,
         minHeight: 200.00,
         minWidth: 200.00,
         scale: 1.00,
@@ -61,11 +61,11 @@ function Home() {
   }, [])
 
   return (
-    <div className="text-and-image-container h-auto w-full sm:mb-0 h-screen" id="home" ref={homeRef}>
+    <div className="text-and-image-container w-full sm:mb-0 " id="home" ref={homeRef}>
 
       <div className="iran-yekan-bold mx-auto  flex w-[90%] flex-col items-center sm:flex-row lg:w-[80%] lg:justify-between  ">
 
-        <div className="text-container mt-20 w-1/2 " style={{ direction: 'rtl' }}>
+        <div className="text-container mt-40 w-1/2 " style={{ direction: 'rtl' }}>
           <h2 className="text-3xl font-semibold leading-tight text-white lg:text-5xl" >
             با سلام <span className="wave">👋</span>
           </h2>
