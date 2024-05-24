@@ -17,10 +17,10 @@ function Layout() {
       {/* <Element name="About-section">
         <About />
       </Element> */}
-      {/* <Element name="Project-section">
+      <Element name="Project-section">
         <Project />
       </Element>
-      <Element name="Contact-section">
+      {/* <Element name="Contact-section">
         <Contact />
       </Element>
       <Footer /> */}

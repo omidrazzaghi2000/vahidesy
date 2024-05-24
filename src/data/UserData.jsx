@@ -1,6 +1,6 @@
 export const UserData = {
   name: "Vahid & Ali Akbar",
-  about : "We are so googooli and attractive please join us",
+  about : "Our mission is to promote and ease multidesciplinary and interdesciplinary studies on Mind, Brain, and Consciousness.",
   resumeUrl : "https://drive.google.com/file/d/1LSVLVmJA_3fhWtZPc_d_pHnkXhL4s-Oc/view",
   FooterLink : "https://www.linkedin.com/in/rahulvijay81/",
   socialMedia: [
@@ -23,9 +23,9 @@ export const UserData = {
   ],
   typewriterOptions: {
     strings: [
-      "با ما در تماس باشید",
-      "اخبار انجمن را از درگاه‌ های زیر پیگیری کنید",
-      "راه‌های ارتباطی",
+        "Follow us",
+        "Get in touch",
+        
 
     ],
     autoStart: true,

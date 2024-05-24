@@ -16,6 +16,10 @@ import { color } from "framer-motion";
 import logo from "../Assets/images/brain_logo.png";
 // import * as THREE from "three";
 import NET from "vanta/dist/vanta.net.min.js";
+
+import About from "./About";
+
+
 function Home() {
   const socialMedia = UserData.socialMedia;
 
@@ -40,7 +44,9 @@ function Home() {
         touchControls: true,
         gyroControls: true,
         minHeight: 200.00,
-        minWidth: 200.00,
+        minWidth: 300.00,
+        maxWidth: 1200.00,
+        
         scale: 1.00,
         scaleMobile: 1.00,
         color: 0xBAA025,
@@ -61,18 +67,17 @@ function Home() {
   }, [])
 
   return (
-    <div className="text-and-image-container w-full sm:mb-0 " id="home" ref={homeRef}>
+    <div className="text-and-image-container w-full h-full sm:mb-0 " id="home" ref={homeRef}>
 
-      <div className="iran-yekan-bold mx-auto  flex w-[90%] flex-col items-center sm:flex-row lg:w-[80%] lg:justify-between  ">
+      <div className=" mx-auto flex w-full flex-col items-center sm:flex-row lg:w-[90%] lg:justify-between  ">
 
-        <div className="text-container mt-40 w-1/2 " style={{ direction: 'rtl' }}>
-          <h2 className="text-3xl font-semibold leading-tight text-white lg:text-5xl" >
-            با سلام <span className="wave">👋</span>
+        <div className="text-container mt-10 p-8 w-1/2 " style={{ direction: 'ltr' }}>
+          <h2 className="text-2xl font-semibold leading-tight text-white lg:text-5xl" >
+            Hello!<span className="wave">👋</span>
           </h2>
-          <h2 style={{ lineHeight: '1.5' }} className="pt-2 text-2xl  font-semibold leading-tight text-white" >
-            به سایت انجمن علمی دانشجویی مغز و فلسفه ذهن
-            دانشکدهٔ پزشکی
-            دانشگاه علوم پزشکی شهید بهشتی خوش آمدید
+          <h2 style={{ lineHeight: '1.5' }} className="pt-2 text-1xl  font-semibold leading-tight text-white lg:text-2xl" >
+           Welcome to our journey.
+
           </h2>
           <TypewriterText />
 
@@ -132,16 +137,20 @@ function Home() {
           /> */}
           <div>
             <img style={{ display: 'block' }}
-              className="h-50 w-50 bg-cover bg-no-repeat m-auto"
+              className="brain-image  h-50 w-50 bg-cover bg-no-repeat m-auto"
               src={logo}
               alt="logo"
             />
-            <h1 className="caption-in-image">مغز و فلسفه‌ی ذهن</h1>
+            <h1 className="caption-in-image"> Mind and Philosa </h1>
           </div>
 
 
         </div>
       </div>
+      <div style={{marginTop:'32px'}}>
+      <About></About>
+      </div>
+      
     </div>
   );
 }
