@@ -21,7 +21,8 @@ function Cards() {
       {projectsToDisplay.map((project, index) => (
         <div
           key={index}
-          className="mb-8 h-auto rounded-lg bg-transparent p-4 shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px] hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)]"
+          style={{backgroundColor:"#ddd"}}
+          className="mb-8 h-auto rounded-lg p-4 shadow-[rgba(50,_50,_105,_0.9)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px] hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)]"
         >
           <div className="flex flex-col items-center">
             <div class="circular-image">

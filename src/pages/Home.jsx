@@ -18,6 +18,8 @@ import logo from "../Assets/images/brain_logo.png";
 import NET from "vanta/dist/vanta.net.min.js";
 
 import About from "./About";
+import Project from "./Project";
+import Contact from "./Contact";
 
 
 function Home() {
@@ -42,16 +44,14 @@ function Home() {
         el: homeRef.current,
         mouseControls: true,
         touchControls: true,
-        gyroControls: true,
+        gyroControls: false,
         minHeight: 200.00,
         minWidth: 300.00,
-        maxWidth: 1200.00,
-        
         scale: 1.00,
         scaleMobile: 1.00,
         color: 0xBAA025,
         backgroundColor: 0x140c2e,
-        points: 8.00,
+        points: 10.00,
         maxDistance: window.innerWidth > 600 ? 42.00 : 29.00,
         spacing: 35.00,
         vertextColors: 0x222
@@ -71,7 +71,7 @@ function Home() {
 
       <div className=" mx-auto flex w-full flex-col items-center sm:flex-row lg:w-[90%] lg:justify-between  ">
 
-        <div className="text-container mt-10 p-8 w-1/2 " style={{ direction: 'ltr' }}>
+        <div className="text-container mt-40 p-8 w-1/2 " style={{ direction: 'ltr' }}>
           <h2 className="text-2xl font-semibold leading-tight text-white lg:text-5xl" >
             Hello!<span className="wave">👋</span>
           </h2>
@@ -129,7 +129,18 @@ function Home() {
 
         </div>
 
-        <div className=" right-panel text-center">
+        
+      </div>
+      <div style={{marginTop:'32px'}}>
+      <About></About>
+      </div>
+      <div style={{marginTop:'32px',backgroundColor:'#ddddddaa'}}>
+      <Project></Project>
+      </div>
+      <div style={{marginTop:'32x',backgroundColor:'#ddddddaa'}}>
+      <Contact></Contact>
+      </div>
+      <div className="mx-auto right-panel text-center">
           {/* <img
             className="max-w[550px] bg-cover bg-center bg-no-repeat lg:w-[2500px]"
             src={imagedeveloper}
@@ -141,16 +152,11 @@ function Home() {
               src={logo}
               alt="logo"
             />
-            <h1 className="caption-in-image"> Mind and Philosa </h1>
+            <h1 className="caption-in-image"> Brain and Philosophy of Mind Association </h1>
           </div>
 
 
         </div>
-      </div>
-      <div style={{marginTop:'32px'}}>
-      <About></About>
-      </div>
-      
     </div>
   );
 }

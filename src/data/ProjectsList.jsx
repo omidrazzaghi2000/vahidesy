@@ -1,19 +1,10 @@
 import vahidEsyImage from "../Assets/images/vahidEsy.jpg";
-import kouchakzadeh from "../Assets/images/kouchakzadeh.jpg";
+import kouchakzadeh from "../Assets/images/kouchakzade.jpg";
 import farahani from "../Assets/images/farahani.jpg";
 import abbasi from "../Assets/images/abbasi.jpg";
 
 export const ProjectsList = {
   projects: [
-    {
-      name: "Vahid Ehsanian, M.D.",
-      description:
-        "",
-      technologies: [
-        
-      ],
-      image_src:vahidEsyImage
-    },
     {
       name: "Aliakbar Kouchakzadeh, M.D.",
       description:
@@ -23,6 +14,16 @@ export const ProjectsList = {
       ],
       image_src:kouchakzadeh
     },
+    {
+      name: "Vahid Ehsanian, M.D.",
+      description:
+        "",
+      technologies: [
+        
+      ],
+      image_src:vahidEsyImage
+    },
+    
     {
       name: "Ali Abbasi, MD Student",
       description:

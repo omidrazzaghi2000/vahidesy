@@ -1,4 +1,11 @@
 # Omid Pay Attention
+
+## Note
+In the last mindphilos deploytion `:)` you edit built website 
+- delete all /vahidesy
+- change the name of the abbasi and farahani
+but these two above not configured in reactjs application.
+
 For deploying you must add three-vanta.js in utils directory and add below tag into last final index.html
 .It must be done in each deploying and after each build command.
 ```html

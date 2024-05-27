@@ -2,7 +2,7 @@ export const UserData = {
   name: "Vahid & Ali Akbar",
   about : "Our mission is to promote and ease multidesciplinary and interdesciplinary studies on Mind, Brain, and Consciousness.",
   resumeUrl : "https://drive.google.com/file/d/1LSVLVmJA_3fhWtZPc_d_pHnkXhL4s-Oc/view",
-  FooterLink : "https://www.linkedin.com/in/rahulvijay81/",
+  FooterLink : "mailto:info@mindphilosa.ir",
   socialMedia: [
     
     {

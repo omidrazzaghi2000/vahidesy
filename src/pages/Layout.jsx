@@ -17,9 +17,9 @@ function Layout() {
       {/* <Element name="About-section">
         <About />
       </Element> */}
-      <Element name="Project-section">
+      {/* <Element name="Project-section">
         <Project />
-      </Element>
+      </Element> */}
       {/* <Element name="Contact-section">
         <Contact />
       </Element>
