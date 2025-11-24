@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Routes,
   Route,
   useLocation,
@@ -12,6 +12,8 @@ import Cursor from "../src/components/Cursor";
 import Layout from "./pages/Layout";
 import ArchiveProjects from "./pages/ArchiveProjects";
 import NotFound from "./pages/NotFound";
+import Donate from "./pages/Donate";
+import DonationPage from "./pages/DonationForAliAkbar";
 import "./App.css";
 
 function ScrollToTopOnRouteChange() {
@@ -35,25 +37,17 @@ function App() {
     return () => clearTimeout(timer);
   }, []);
 
-  return (
-    <div className="App ">
-      {/* <Cursor /> */}
-      <Router>
-        <Preloader load={load} />
-        <div className="App" id={load ? "no-scroll" : "scroll"}>
-          {/* <ScrollToTopOnRouteChange /> */}
-          <Layout />
-          {/* <Routes>
-            <Route path="/" element={<Layout />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/projectlist" element={<ArchiveProjects />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/*" element={<NotFound />} />
-          </Routes> */}
-        </div>
-      </Router>
-    </div>
-  );
+  const hostname = window.location.hostname;
+
+  let content;
+  if (hostname.startsWith('donate.')) {
+    content = <DonationPage />;
+  } else {
+    content = <Layout />;
+  } 
+  return <div>{content}</div>;
+
+ 
 }
 
 export default App;

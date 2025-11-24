@@ -25,14 +25,14 @@ export const ProjectsList = {
     },
     
     {
-      name: "Ali Abbasi, MD Student",
+      name: "Ali Abbasi, M.D. Student",
       description:
         "",
       technologies: [],
       image_src:abbasi
     },
     {
-      name: "Ehsan Ortegoli Farahani, PharmD.",
+      name: "Ehsan Ortegoli Farahani, PharmD. Student",
       description:
         "",
       technologies: [],

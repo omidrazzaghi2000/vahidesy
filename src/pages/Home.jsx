@@ -82,35 +82,26 @@ function Home() {
           <TypewriterText />
 
           <div className="link-buttons mt-4 flex gap-8  lg:gap-0">
-
-          <button
-              className="flex items-center justify-center rounded-lg border-none bg-transparent hover:bg-white hover:bg-opacity-20 hover:opacity-80 hover:shadow-lg lg:h-12 lg:w-24"
-
-
-            >
-
-              <img
-                className="h-[30px] w-[30px] bg-contain bg-no-repeat"
-                src={TelegramIcon}
-                alt="telegramIcon"
-                onClick={()=>window.open("https://t.me/mindphilosa")}
-              />
-            </button>
-
             <button
-              className="flex items-center justify-center rounded-lg border-none bg-transparent hover:bg-white hover:bg-opacity-20 hover:opacity-80 hover:shadow-lg lg:h-12 lg:w-24"
-
-
-            >
-
-              <img
-                className="h-[30px] w-[30px] bg-contain bg-no-repeat"
-                src={VirgoolIcon}
-                alt="virgoolIcon"
-                onClick={()=>window.open("https://virgool.io/Mindphilosa")}
-              />
+                className="flex items-center justify-center rounded-lg border-none bg-transparent hover:bg-white hover:bg-opacity-20 hover:opacity-80 hover:shadow-lg lg:h-12 lg:w-24"
+                >
+                <img
+                  className="h-[30px] w-[30px] bg-contain bg-no-repeat"
+                  src={TelegramIcon}
+                  alt="telegramIcon"
+                  onClick={()=>window.open("https://t.me/mindphilosa")}
+                />
             </button>
-
+            <button
+                className="flex items-center justify-center rounded-lg border-none bg-transparent hover:bg-white hover:bg-opacity-20 hover:opacity-80 hover:shadow-lg lg:h-12 lg:w-24"
+                >
+                <img
+                  className="h-[30px] w-[30px] bg-contain bg-no-repeat"
+                  src={VirgoolIcon}
+                  alt="virgoolIcon"
+                  onClick={()=>window.open("https://virgool.io/Mindphilosa")}
+                />
+            </button>
             {socialMedia.map((data, index) => {
               const IconComponent = socialMediaIcons[data.icon];
               return (
@@ -123,8 +114,14 @@ function Home() {
                 </button>
               );
             })}
-            
-
+          </div>
+          <div className="donate-row mt-4 flex justify-start w-full">
+            <button
+                className="flex items-center justify-center rounded-lg border-none bg-gradient-to-r from-yellow-400 via-yellow-600 to-yellow-800 text-white font-bold shadow-lg hover:scale-105 transition-transform duration-200 hover:from-yellow-500 hover:to-yellow-900 px-6 py-3 rounded-xl"
+                onClick={() => window.location.href = 'https://donate.mindphilosa.ir'}
+              >
+                <span style={{fontSize: '1.2rem', letterSpacing: '1px',fontFamily:"IranYekan-Bold"}}>💛 حمایت مالی (Donate)</span>
+            </button>
           </div>
 
         </div>
