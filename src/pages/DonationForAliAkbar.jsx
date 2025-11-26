@@ -3,7 +3,7 @@ import { Heart, GraduationCap, MapPin, Target, Globe, Users, DollarSign, Star, B
 import personalImage from "../Assets/images/kouchakzade.jpg";
 const DonationPage = () => {
   const [language, setLanguage] = useState('en');
-  const [currentDonated, setCurrentDonated] = useState(8750);
+  const [currentDonated, setCurrentDonated] = useState(0);
   const [donationAmount, setDonationAmount] = useState('');
   const [showThankYou, setShowThankYou] = useState(false);
 
@@ -67,9 +67,9 @@ const DonationPage = () => {
         currency: "Euros",
         breakdown: [
           { item: "Tuition Fees", amount: 24000, description: "Average tuition fee needed" },
-          { item: "Living Expenses", amount: 16000, description: "Accommodation and food" },
-          { item: "Books and Materials", amount: 3000, description: "Academic resources" },
-          { item: "Pre-enrollment Requirements", amount: 3000, description: "Visa costs, flight tickets, tolls, and tax" }
+          { item: "Living Expenses", amount: 10000, description: "Minimum student living costs for 2 years (420 euros per month as a supplement to employment)" },
+          { item: "Release Bond for Document", amount: 9000, description: "Academic resources" },
+          { item: "Miscellaneous", amount: 3000, description: "Visa costs, flight tickets, tolls, tax, books, and academic partnerships." }
         ]
       },
       
@@ -77,7 +77,7 @@ const DonationPage = () => {
         "🏆 Top 0.25% in National University Entrance Exam",
         "📚 Author of more than 10 papers in peer-reviewed journals and presentations in international conferences",
         "🎁 Scholarship winner for oral presentations and tuition fee reduction",
-        "👥 Co-founder of Brain and Philosophy of Mind Association"
+        "👥 Co-founder of Brain and Philosophy of Mind Association",
       ],
       
       whyHelp: [
@@ -177,9 +177,9 @@ const DonationPage = () => {
         currency: "یورو",
         breakdown: [
           { item: "شهریه دانشگاه", amount: 24000, description: "میانگین شهریه کل دوره" },
-          { item: "هزینه غذا و خوابگاه", amount: 16000, description: "حداقل هزینه زندگی دانشجویی" },
-          { item: "کتاب و اشتراک‌های تحصیلی", amount: 3000, description: "منابع آکادمیک" },
-          { item: "الزامات پیش از شروع", amount: 3000, description: "هزینه‌های ویزا، بلیط رفت و برگشت و عوارض خروج" }
+          { item: "هزینه غذا و خوابگاه", amount: 10000, description: "حداقل هزینه زندگی دانشجویی برای 2 سال (ماهانه 420 یورو به صورت کمک هزینه کنار اشتغال)" },
+          { item: "وثیقه‌ی آزادسازی مدرک", amount: 9000, description: "منابع آکادمیک" },
+          { item: "متفرقه", amount: 3000, description: "هزینه‌های ویزا، بلیط رفت و برگشت و عوارض خروج و کتب و اشتراکات تحصیلی" }
         ]
       },
       
