@@ -385,8 +385,12 @@ const DonationPage = () => {
                   alt={currentData.personal.name}
                   className="w-80 h-80 object-cover rounded-full border-8 border-white shadow-2xl"
                 />
-                <div className="absolute -bottom-4 -right-4 bg-yellow-400 rounded-full p-4 shadow-lg">
-                  <BookOpen className="w-8 h-8 text-yellow-800" />
+                <div className="flex absolute -bottom-4 -right-4 bg-yellow-400 rounded-full p-4 hover:cursor-pointer hover:bg-yellow-600 shadow-lg" onClick={()=>window.open(
+                  "/#"
+                  , '_blank', 'location=yes,height=570,width=520,scrollbars=yes,status=yes')}>
+                  <BookOpen className="w-8 h-8 text-yellow-800 mr-4" />
+                  
+                  {language==="fa"? "مشاهده رزومه" : "See Resume"}
                 </div>
               </div>
             </div>
@@ -461,6 +465,45 @@ const DonationPage = () => {
                     €{amount}
                   </button>
                 ))}
+              </div>
+
+              {/* Rial Donate Buttons */}
+              <div className="mt-8">
+                {language === 'fa' ? (
+                  <>
+                    <h5 className="text-xl font-semibold mb-4 text-gray-700">حمایت ریالی</h5>
+                    <div className="flex flex-wrap justify-center gap-4">
+                      {[2000000, 5000000, 10000000, 20000000, 50000000].map(amount => (
+                        <a
+                          key={amount}
+                          href="https://daramet.com/edu1404"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="bg-green-50 border-2 border-green-300 hover:bg-green-100 hover:border-green-500 px-6 py-3 rounded-xl font-semibold text-green-700 transition-all duration-200 hover:shadow-lg transform hover:scale-105"
+                        >
+                          {amount.toLocaleString()} ریال
+                        </a>
+                      ))}
+                    </div>
+                  </>
+                ) : (
+                  <>
+                    <h5 className="text-xl font-semibold mb-4 text-gray-700">You can also donate in IRR (Iranian Rials)</h5>
+                    <div className="flex flex-wrap justify-center gap-4">
+                      {[2000000, 5000000, 10000000, 20000000, 50000000].map(amount => (
+                        <a
+                          key={amount}
+                          href="https://daramet.com/edu1404"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="bg-green-50 border-2 border-green-300 hover:bg-green-100 hover:border-green-500 px-6 py-3 rounded-xl font-semibold text-green-700 transition-all duration-200 hover:shadow-lg transform hover:scale-105"
+                        >
+                          {amount.toLocaleString()} IRR
+                        </a>
+                      ))}
+                    </div>
+                  </>
+                )}
               </div>
             </div>
           </div>
