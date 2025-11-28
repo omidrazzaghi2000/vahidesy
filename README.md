@@ -1,5 +1,14 @@
 # Omid Pay Attention
 
+Login to cloudflare with aliakbar 
+then npm run build
+add three-vanta.js to assets folder
+change src/Assets to assets
+compress dist directory to dist.zip inside the folder
+go to workers and pages in dashboard of cloudflare and then you can create a new deployment with dist.zip 
+
+
+
 ## Note
 In the last mindphilos deploytion `:)` you edit built website 
 - delete all /vahidesy
@@ -18,6 +27,8 @@ Deploy with below command
 $npx gh-pages -d dist
 ```
 
+
+You must upload builded 
 
 
 
